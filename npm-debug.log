@@ -10,7 +10,7 @@
 6 silly lifecycle @~prewatch: no script for prewatch, continuing
 7 info lifecycle @~watch: @
 8 verbose lifecycle @~watch: unsafe-perm in lifecycle true
-9 verbose lifecycle @~watch: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/emilywivell/projects/5.15-Speedway/node_modules/.bin:/usr/local/heroku/bin:/Applications/Postgres.app/Contents/Versions/9.4/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin
+9 verbose lifecycle @~watch: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/emilywivell/projects/5.15-Speedway/node_modules/.bin:/usr/local/heroku/bin:/Applications/Postgres.app/Contents/Versions/9.4/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/Users/emilywivell/projects/5.15-Speedway/node_modules/.bin
 10 verbose lifecycle @~watch: CWD: /Users/emilywivell/projects/5.15-Speedway
 11 silly lifecycle @~watch: Args: [ '-c',
 11 silly lifecycle   'parallelshell \'npm run watch:html\' \'npm run watch:scss\' \'npm run watch:images\' \'npm run watch:js\' \'npm run server\'' ]
