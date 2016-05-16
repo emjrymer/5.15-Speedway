@@ -63,8 +63,6 @@ var HomePageComponent = React.createClass({
               <li data-target="#myCarousel" data-slide-to="2"></li>
               <li data-target="#myCarousel" data-slide-to="3"></li>
             </ol>
-
-
            <div className="carousel-inner" role="listbox">
              <div className="item active slide1">
              <img src="http://www.goglo.net/images/fp-rs-images-376x200/Warehouse_and_Cargo_Insurance.jpg" alt="" className="" />

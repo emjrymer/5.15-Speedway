@@ -65,8 +65,6 @@ var HomePageComponent = React.createClass({displayName: "HomePageComponent",
               React.createElement("li", {"data-target": "#myCarousel", "data-slide-to": "2"}), 
               React.createElement("li", {"data-target": "#myCarousel", "data-slide-to": "3"})
             ), 
-
-
            React.createElement("div", {className: "carousel-inner", role: "listbox"}, 
              React.createElement("div", {className: "item active slide1"}, 
              React.createElement("img", {src: "http://www.goglo.net/images/fp-rs-images-376x200/Warehouse_and_Cargo_Insurance.jpg", alt: "", className: ""})
