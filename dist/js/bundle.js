@@ -8,15 +8,23 @@ var Backbone = require('backbone');
 var HomePageComponent = React.createClass({displayName: "HomePageComponent",
   render: function(){
     return (
-      React.createElement("div", null, 
+    React.createElement("div", null, 
+      React.createElement("header", {id: "siteHead"}, 
+          React.createElement("div", {class: "holder"}, 
+              React.createElement("div", {class: "logoHolder"}, 
+                  React.createElement("a", {href: "#", title: "Speedway | Packaging and Distribution"}, 
+                      React.createElement("img", {src: "http://www.voucherfox.co.uk/images/image_993629474.jpg", alt: "Speedway Packaging and Distribution", "data-pin-nopin": "true"})
+                  )
+              )
+          )
+      ), 
       React.createElement("div", {className: "container-fluid"}, 
-
             React.createElement("div", {className: "row"}, 
-              React.createElement("div", {className: "col-md-4 main-nav"}, 
-                React.createElement("ul", null, 
-                  React.createElement("li", null, React.createElement("a", {href: "#"}, "Home")), 
-                  React.createElement("li", null, React.createElement("a", {href: "#"}, "Link"))
-                )
+                React.createElement("div", {className: "col-md-4 main-nav"}, 
+                  React.createElement("ul", null, 
+                    React.createElement("li", null, React.createElement("a", {href: "#"}, "Home")), 
+                    React.createElement("li", null, React.createElement("a", {href: "#"}, "Link"))
+                  )
               ), 
               React.createElement("div", {className: "col-md-4 title"}, 
                 React.createElement("h2", null, "Speedway"), 
@@ -94,7 +102,7 @@ var HomePageComponent = React.createClass({displayName: "HomePageComponent",
           )
         )
        )
-      )
+   )
     );
   }
 })
