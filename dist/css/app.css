@@ -5822,6 +5822,43 @@ body ul {
 body a {
   text-decoration: none; }
 
+#siteHead {
+  width: 100%;
+  height: 105px;
+  float: left;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 998;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.35); }
+
+#siteHead .holder {
+  position: relative;
+  -ms-zoom: 1;
+  zoom: 1; }
+
+#siteHead .holder .logoHolder {
+  height: 105px;
+  float: left;
+  text-align: left;
+  background-position: left top;
+  background-repeat: no-repeat; }
+
+#siteHead .holder .logoHolder a {
+  display: block;
+  width: 100%;
+  height: 105px;
+  padding: 1.5em 0 0 2.75em;
+  float: left;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+#siteHead .holder .logoHolder img {
+  max-width: none; }
+
 .container-fluid {
   background-image: url("https://media.licdn.com/mpr/mpr/p/4/005/08c/20c/34306f1.jpg");
   opacity: 0.9;
@@ -5829,20 +5866,11 @@ body a {
   background-size: cover;
   height: 570px;
   color: black;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding-top: 125px; }
   .container-fluid a {
     text-decoration: none;
     color: #9D4A45; }
-
-.product-button {
-  border: 2px solid white;
-  background-color: #9D4A45;
-  padding: 17px 40px;
-  width: 58px;
-  margin: auto;
-  text-align: center;
-  text-decoration: none;
-  color: #fff; }
 
 .main-nav {
   display: inline-block;
@@ -5856,6 +5884,16 @@ body a {
       background-color: #9D4A45;
       padding: 5px 10px;
       border-radius: 5px; }
+
+.product-button {
+  border: 2px solid white;
+  background-color: #9D4A45;
+  padding: 17px 40px;
+  width: 58px;
+  margin: auto;
+  text-align: center;
+  text-decoration: none;
+  color: #fff; }
 
 .s-button {
   margin-top: 519px;

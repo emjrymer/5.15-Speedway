@@ -6,15 +6,23 @@ var Backbone = require('backbone');
 var HomePageComponent = React.createClass({
   render: function(){
     return (
-      <div>
+    <div>
+      <header id="siteHead">
+          <div class="holder">
+              <div class="logoHolder">
+                  <a href="#" title="Speedway | Packaging and Distribution">
+                      <img src="http://www.voucherfox.co.uk/images/image_993629474.jpg" alt="Speedway Packaging and Distribution" data-pin-nopin="true"></img>
+                  </a>
+              </div>
+          </div>
+      </header>
       <div className="container-fluid">
-
             <div className="row">
-              <div className="col-md-4 main-nav">
-                <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Link</a></li>
-                </ul>
+                <div className="col-md-4 main-nav">
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Link</a></li>
+                  </ul>
               </div>
               <div className="col-md-4 title">
                 <h2>Speedway</h2>
@@ -92,7 +100,7 @@ var HomePageComponent = React.createClass({
           </div>
         </div>
        </div>
-      </div>
+   </div>
     );
   }
 })
