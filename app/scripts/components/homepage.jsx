@@ -2,10 +2,13 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var $ = require('jquery');
 var Backbone = require('backbone');
+var Footer = require('./../components/footer.jsx');
+var Header = require('./../components/header.jsx');
 
 var HomePageComponent = React.createClass({
   render: function(){
     return (
+<<<<<<< HEAD
     <div>
       <header id="siteHead">
           <div class="holder">
@@ -36,32 +39,42 @@ var HomePageComponent = React.createClass({
             <a href="#" className="product-button">Link</a>
             <a href="#" className="product-button">Link</a>
             <a href="#" className="product-button">Link</a>
+=======
+        <div>
+      <div><Header/></div>
+      <div className="container-fluid">
+            <div className="row">
+                
+>>>>>>> master
           </div>
-        </div>
-        <div className="row image-boxes">
-          <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 picbox1">
-            <img src="http://www.goglo.net/images/fp-rs-images-376x200/Warehouse_and_Cargo_Insurance.jpg" alt="" />
+          <div className="collapse navbar-collapse">
+          <ul className="nav navbar-nav">
+            <li className="active"><a href="#"><span className="glyphicon glyphicon-home"></span>
+             Home</a></li>
+             <li><a href="#"><span className="glyphicon glyphicon-star"></span> Top
+                 Destinations</a></li>
+             <li className="dropdown">
+                  <a href="#" className="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span className="glyphicon glyphicon-user"></span> About Us<b className="caret"></b></a>
+                  <ul className="dropdown-menu">
+                      <li><a href="#">example</a></li>
+                      <li><a href="#">example</a></li>
+                      <li><a href="#">example</a></li>
+                  </ul>
+              </li>
+          </ul>
           </div>
-          <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 picbox2">
-            <img src="http://www.goglo.net/images/fp-rs-images-376x200/Warehouse_and_Cargo_Insurance.jpg" alt="" />
-          </div>
-        </div>
-        <div className="row image-boxes2">
-          <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 picbox3">
-            <img src="http://www.goglo.net/images/fp-rs-images-376x200/Warehouse_and_Cargo_Insurance.jpg" alt="" />
-          </div>
-          <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 picbox4">
-            <img src="http://www.goglo.net/images/fp-rs-images-376x200/Warehouse_and_Cargo_Insurance.jpg" alt="" className="thered" />
+        <div className="row">
+          <div className="products col-sm-8">
+             <div className="col-xs-12 col-md-2"><a href="#tape" className="product-button"><img src="http://2.bp.blogspot.com/-ZzTduUEm7IA/VGpoX_uG0-I/AAAAAAAAMUI/5GPPgkbwmO0/s1600/icon_questing_tape_red-14908ebf916a13eac2f77c0b1528e261.png" atl="Tape"></img></a></div>
+             <div className="col-xs-12 col-md-2"><a href="#bulk" className="product-button"><img src="http://www.alminter.com.mx/img/alminter/slider/ahorre.png" atl="Money"></img></a></div>
+             <div className="col-xs-12 col-md-2"><a href="#industrial" className="product-button"><img src="http://sellingwithinsight.com/wp-content/uploads/2016/04/red-handshake-icon-handshake-icon.jpg" atl="Work Together"></img></a></div>
+             <div className="col-xs-12 col-md-2"><a href="#copackaging" className="product-button"><img src="http://hatchforce.com/wp-content/uploads/2014/06/icon-idea1.png" atl="Ideas"></img></a></div>
+             <div className="col-xs-12 col-md-2"><a href="#pl" className="product-button"><img src="https://www.af-affinity.co.uk/wp-content/uploads/2015/09/business-icon-reversed.png" atl="Business"></img></a></div>
           </div>
         </div>
 
-        <div className="row short-story">
-          <div className="col-xs-12">
-            <h2>Blurb</h2>
-            <p>Example Paragraph</p>
-            <a href="#" className="read-story">About Us</a>
-          </div>
-        </div>
+
         <div className="">
           <div id="myCarousel" className="carousel slide" data-ride="carousel">
 
@@ -99,8 +112,16 @@ var HomePageComponent = React.createClass({
             </a>
           </div>
         </div>
+<<<<<<< HEAD
        </div>
    </div>
+=======
+        <div>
+            <Footer/>
+      </div>
+       </div>
+       </div>
+>>>>>>> master
     );
   }
 })

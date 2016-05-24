@@ -17,6 +17,7 @@ img {
 }
 
 body {
+    background-color: #eee;
   ul {
     list-style: none;
   }
@@ -25,7 +26,11 @@ body {
   }
 }
 
+<<<<<<< HEAD
 #siteHead {
+=======
+#head {
+>>>>>>> master
   width: 100%;
   height: 105px;
   float: left;
@@ -34,22 +39,111 @@ body {
   right: 0;
   left: 0;
   z-index: 998;
+<<<<<<< HEAD
   background-color: #fff;
   box-shadow: 0 0 5px rgba(0,0,0,0.35);
 }
 
 #siteHead .holder {
+=======
+  background-color: #eee;
+  box-shadow: 0 0 25px rgba(0,0,0,0.35);
+}
+
+
+// .product-button {
+//   border: 2px solid white;
+//   background-color: #9D4A45;
+//   padding: 17px 40px;
+//   width: 58px;
+//   margin: auto;
+//   text-align: center;
+//   text-decoration: none;
+//   color: #fff;
+// }
+.product-button img {
+    width: 100px;
+    height: 100px;
+    margin: auto 55px;
+}
+
+.product-button img:hover {
+    border-radius: 5px;
+    background-color: #eee;
+    // box-shadow: 0 0 25px 5px rgba(0,0,0,0.35);
+}
+
+.products {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 20px;
+  margin-bottom: 77px;
+  // border: 2px solid black;
+  width: 90%;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.35);
+}
+
+.footer {
+    margin-top: 10px;
+    border: 2px solid black;
+    left:0px;
+    bottom:0px;
+    width:100%;
+    background: #5F6062;
+    color: #fff;
+    font-size: 13px;
+}
+
+.col-md-2 {
+    margin: 0 auto;
+}
+
+.col-md-6 {
+    padding: 0 30px 12px;
+    margin: 24px 0;
+}
+
+@media (min-width: 992px){
+    .col-md-6 {
+        width: 50%;
+        float: left;
+        position: relative;
+        min-height: 1px;
+    }
+}
+
+label {
+    margin: 0;
+    padding-top: 3px;
+    clear: both;
+    font-size: 85%;
+    line-height: 160%;
+    color: #444;
+    display: block;
+}
+.holder {
+>>>>>>> master
     position: relative;
     -ms-zoom: 1;
     zoom: 1;
 }
 
+<<<<<<< HEAD
 #siteHead .holder .logoHolder {
+=======
+.logoHolder {
+>>>>>>> master
     height: 105px;
     float: left;
     text-align: left;
     background-position: left top;
     background-repeat: no-repeat;
+<<<<<<< HEAD
 }
 
 #siteHead .holder .logoHolder a {
@@ -65,10 +159,58 @@ body {
 
 #siteHead .holder .logoHolder img {
     max-width: none;
+=======
+    a {
+        display: block;
+        width: 100%;
+        height: 105px;
+        padding: 0 0 0 2.75em;
+        float: left;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    img {
+        max-width: none;
+    }
+  }
+}
+
+.call {
+    position: absolute;
+    padding: 0 1em;
+    margin-bottom: 1.5em;
+    top: 0;
+    right: 2.5em;
+    background-color: #EE7600;
+    a{
+        color: #fff;
+        letter-spacing: 1.5px;
+    }
+}
+
+.dropdown {
+    position: absolute;
+    right: 2.5em;
+    top: 5em;
+}
+
+button {
+    border: none;
+    background-color: #eee;
+}
+.glyphicon-align-justify {
+    font-size: 25px;
+}
+
+.address {
+    position: absolute;
+    right: 2.5em;
+    top: 2em;
+    text-align: right;
+>>>>>>> master
 }
 
 .container-fluid {
-  background-image: url('https://media.licdn.com/mpr/mpr/p/4/005/08c/20c/34306f1.jpg');
   opacity: 0.9;
   -webkit-background-size: cover;
   background-size: cover;
@@ -98,6 +240,7 @@ body {
   }
 }
 
+<<<<<<< HEAD
 .product-button {
   border: 2px solid white;
   background-color: #9D4A45;
@@ -120,6 +263,8 @@ body {
   }
 }
 
+=======
+>>>>>>> master
 .title {
   text-align: center;
   margin-top: 20px;
@@ -132,18 +277,18 @@ body {
   }
 }
 
-.short-story {
+.paragraph {
   text-align: center;
-  background-color: #ebddd6;
+  background-color: #eee;
   margin-right: 0px;
   padding-bottom: 25px;
   h2 {
   font-size: 36px;
-  color: #000;
+  color: black;
   }
   p {
     font-size: 18px;
-    color: #fff;
+    color: gray;
     width: 625px;
     margin: auto;
     text-align: center;
@@ -153,7 +298,7 @@ body {
     padding-top: 5px;
     font-size: 16px;
     text-decoration: none;
-    color: #000;
+    color: black;
   }
 }
 
@@ -180,34 +325,6 @@ body {
 
 .slide4 {
   height: 400px;
-}
-
-.picbox4 {
-  padding-right: 0;
-  padding-left: 0;
-  img {
-    border-top: 3px solid #fff;
-    border-bottom: 6px solid #fff;
-    border-right: 19px solid #fff;
-    border-left: 3px solid #fff;
-    opacity: 0.9;
-    height: 424px;
-    width: 100%;
-  }
-}
-
-.picbox3 {
-  padding-right: 0;
-  padding-left: 0;
-  img {
-    border-top: 3px solid #fff;
-    border-bottom: 6px solid #fff;
-    border-right: 3px solid #fff;
-    border-left: 19px solid #fff;
-    opacity: 0.9;
-    height: 424px;
-    width: 100%;
-  }
 }
 
 .picbox1 {
