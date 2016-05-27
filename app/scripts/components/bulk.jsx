@@ -32,7 +32,7 @@ var BulkComponent = React.createClass({
                          </div>
                         <div className="row image-boxes">
                           <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 picbox1">
-                            <img src="http://www.goglo.net/images/fp-rs-images-376x200/Warehouse_and_Cargo_Insurance.jpg" alt="" />
+                            <img src="images/virgin_pp_polypropylene.jpg" alt="" />
                           </div>
                           <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 picbox2">
                             <img src="http://www.goglo.net/images/fp-rs-images-376x200/Warehouse_and_Cargo_Insurance.jpg" alt="" />

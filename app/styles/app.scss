@@ -41,7 +41,7 @@ body {
   right: 0;
   left: 0;
   z-index: 998;
-  background-color: #eee;
+  background-color: #fff;
   box-shadow: 0 0 25px rgba(0,0,0,0.35);
 }
 
@@ -162,6 +162,7 @@ body {
         box-sizing: border-box;
     img {
         max-width: none;
+        padding-top: 15px;
     }
   }
 }

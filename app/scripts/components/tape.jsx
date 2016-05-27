@@ -25,16 +25,19 @@ var TapeComponent = React.createClass({
                                  </ul>
                                </div>
                                <div className="col-md-6">
-                                   <p>kjnsdfbjkndfkjn</p>                               
+                                   <p>kjnsdfbjkndfkjn</p>
                                </div>
                            </div>
                          </div>
                         <div className="row image-boxes">
                           <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 picbox1">
-                            <img src="../app/images/VideoImg1.png" alt="" />
+                              <video controls>
+                                <source src="HY-BD.mp4" type="video/mp4">
+                                Your browser does not support HTML5 video.
+                              </video>
                           </div>
                           <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 picbox2">
-                            <img src="../app/images/Picture1.png" alt="" />
+                            <img src="../app/images/Tape.png" alt="" />
                           </div>
                         </div>
                 </div>
