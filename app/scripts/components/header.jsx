@@ -2,6 +2,8 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var Backbone = require('backbone');
 
+
+
 var Header = React.createClass({
   render: function(){
     return (
@@ -13,7 +15,6 @@ var Header = React.createClass({
                         <img height="100px" src="images/Logo.png" alt="Speedway Packaging and Distribution" data-pin-nopin="true"></img>
                     </a>
                 </div>
-
             </div>
                   <div className="call">
                       <a href="tel:206-949-7471" title="Contact Us"><span className="glyphicon glyphicon-earphone"></span></a>
@@ -27,7 +28,7 @@ var Header = React.createClass({
                     </a>
                   </div>
                   <div className="dropdown">
-                  <button type="button" id="nav" aria-label="Menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <button type="button" className="btn dropdown-toggle" id="nav" aria-label="Menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <span className="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
                   </button>
                   <ul className="dropdown-menu dropdown-menu-right" aria-labelledby="nav">

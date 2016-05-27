@@ -5818,11 +5818,15 @@ img {
   max-width: 100%; }
 
 body {
-  background-color: #eee; }
+  font-family: 'Lato', sans-serif; }
   body ul {
     list-style: none; }
   body a {
     text-decoration: none; }
+
+.address a {
+  color: black;
+  text-decoration: none; }
 
 #head {
   width: 100%;
@@ -5836,36 +5840,48 @@ body {
   background-color: #eee;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.35); }
 
-.product-button img {
-  width: 100px;
-  height: 100px;
-  margin: auto 55px; }
+.col-xs-12.col-md-2 {
+  background-color: #eee;
+  padding: 1% 2%;
+  margin: auto 19px;
+  text-align: center;
+  border-radius: 22px; }
 
-.product-button img:hover {
-  border-radius: 5px;
-  background-color: #eee; }
+.product-header {
+  font-weight: bold;
+  font-size: 150%; }
+
+.product-description {
+  font-size: 12px; }
+
+.glyphicon-bold {
+  font-size: 30px;
+  background: #gray;
+  padding: 5px;
+  border-radius: 10px; }
 
 .products {
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 2%;
   padding-bottom: 2%;
-  margin-left: 5%;
   margin-right: 5%;
-  margin-top: 20px;
-  margin-bottom: 77px;
-  width: 90%;
+  margin-top: 380px;
+  margin-bottom: 0px;
+  border: 2px solid black;
+  width: 100%;
+  height: auto;
   background: #fff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.35); }
 
 .footer {
+  height: 22em;
   margin-top: 10px;
-  border: 2px solid black;
   left: 0px;
   bottom: 0px;
   width: 100%;
-  background: #5F6062;
-  color: #fff;
+  background-image: url("http://previews.123rf.com/images/frameangel/frameangel1412/frameangel141200081/34473325-Metal-de-diamante-de-acero-sin-costura-patr-n-placa-textura-de-fondo-Foto-de-archivo.jpg");
+  color: #gray;
   font-size: 13px; }
 
 .col-md-2 {
@@ -5881,15 +5897,6 @@ body {
     float: left;
     position: relative;
     min-height: 1px; } }
-label {
-  margin: 0;
-  padding-top: 3px;
-  clear: both;
-  font-size: 85%;
-  line-height: 160%;
-  color: #444;
-  display: block; }
-
 .holder {
   position: relative;
   -ms-zoom: 1;
@@ -5915,7 +5922,7 @@ label {
 
 .call {
   position: absolute;
-  padding: 0 1em;
+  padding: 5px 2em;
   margin-bottom: 1.5em;
   top: 0;
   right: 2.5em;
@@ -5927,14 +5934,14 @@ label {
 .dropdown {
   position: absolute;
   right: 2.5em;
-  top: 5em; }
+  top: 4.5em; }
 
 button {
   border: none;
   background-color: #eee; }
 
-.glyphicon-align-justify {
-  font-size: 25px; }
+.glyphicon-menu-hamburger {
+  font-size: 20px; }
 
 .address {
   position: absolute;
@@ -5946,6 +5953,7 @@ button {
   opacity: 0.9;
   -webkit-background-size: cover;
   background-size: cover;
+  background-image: url("http://www.goglo.net/images/fp-rs-images-376x200/Warehouse_and_Cargo_Insurance.jpg");
   height: 570px;
   color: black;
   text-transform: uppercase;
@@ -5953,6 +5961,12 @@ button {
   .container-fluid a {
     text-decoration: none;
     color: #9D4A45; }
+
+.form-control {
+  border: 1px solid #696262; }
+
+.default {
+  background: #fff; }
 
 .main-nav {
   display: inline-block;
@@ -5978,7 +5992,7 @@ button {
 
 .paragraph {
   text-align: center;
-  background-color: #eee;
+  background: transparent;
   margin-right: 0px;
   padding-bottom: 25px; }
   .paragraph h2 {
@@ -6034,8 +6048,63 @@ button {
     border-left: 3px solid #fff;
     width: 100%; }
 
-.image-boxes img {
-  height: 424px;
-  width: 100%; }
+.image-boxes {
+  margin-top: 20px; }
+  .image-boxes img {
+    height: 424px;
+    width: 100%; }
+
+.InputName {
+  width: 13em;
+  border-radius: 5px;
+  float: left; }
+
+.InputCompany {
+  width: 218px;
+  border-radius: 5px;
+  float: left;
+  margin-left: 5em; }
+
+.InputEmail {
+  width: 18em;
+  border-radius: 5px;
+  float: left; }
+
+.InputPhone {
+  width: 151px;
+  border-radius: 5px;
+  float: left;
+  margin-left: 5em; }
+
+.InputMessage {
+  width: 521px;
+  border-radius: 5px;
+  clear: both; }
+
+.submit-button {
+  clear: both; }
+
+label {
+  margin: 0;
+  padding-top: 3px;
+  clear: both;
+  font-size: 85%;
+  line-height: 160%;
+  font-weight: 900;
+  color: #1D3333;
+  display: block;
+  letter-spacing: 2px; }
+
+label.InputCompany {
+  margin-left: 70px; }
+
+label.InputPhone {
+  margin-left: 70px; }
+
+form > div {
+  position: relative; }
+
+.contact {
+  display: none; }
 
 /*# sourceMappingURL=app.css.map */

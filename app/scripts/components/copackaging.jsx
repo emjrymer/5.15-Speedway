@@ -10,12 +10,16 @@ var CopackagingComponent = React.createClass({
         return (
             <div>
                 <Header/>
-                <div className="container-fluid">
+                <div className="container-fluid default">
                         <div className="row paragraph">
                            <div className="col-xs-12">
-                             <h2>Copackaging</h2>
-                             <p>This is sample text</p>
-                             <a href="#" className="paragraph-link">TestLink</a>
+                             <h2>Co Packaging</h2>
+                            <div className="col-md-6">
+                                <p>This is sample text</p>
+                            </div>
+                            <div className="col-md-6">
+                                <p>This is sample text</p>
+                            </div>
                            </div>
                          </div>
                         <div className="row image-boxes">

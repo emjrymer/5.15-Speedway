@@ -12,32 +12,46 @@ var HomePageComponent = React.createClass({
       <div><Header/></div>
       <div className="container-fluid">
             <div className="row">
-                
+
           </div>
-          <div className="collapse navbar-collapse">
-          <ul className="nav navbar-nav">
-            <li className="active"><a href="#"><span className="glyphicon glyphicon-home"></span>
-             Home</a></li>
-             <li><a href="#"><span className="glyphicon glyphicon-star"></span> Top
-                 Destinations</a></li>
-             <li className="dropdown">
-                  <a href="#" className="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <span className="glyphicon glyphicon-user"></span> About Us<b className="caret"></b></a>
-                  <ul className="dropdown-menu">
-                      <li><a href="#">example</a></li>
-                      <li><a href="#">example</a></li>
-                      <li><a href="#">example</a></li>
-                  </ul>
-              </li>
-          </ul>
-          </div>
+
         <div className="row">
           <div className="products col-sm-8">
-             <div className="col-xs-12 col-md-2"><a href="#tape" className="product-button"><img src="http://2.bp.blogspot.com/-ZzTduUEm7IA/VGpoX_uG0-I/AAAAAAAAMUI/5GPPgkbwmO0/s1600/icon_questing_tape_red-14908ebf916a13eac2f77c0b1528e261.png" atl="Tape"></img></a></div>
-             <div className="col-xs-12 col-md-2"><a href="#bulk" className="product-button"><img src="http://www.alminter.com.mx/img/alminter/slider/ahorre.png" atl="Money"></img></a></div>
-             <div className="col-xs-12 col-md-2"><a href="#industrial" className="product-button"><img src="http://sellingwithinsight.com/wp-content/uploads/2016/04/red-handshake-icon-handshake-icon.jpg" atl="Work Together"></img></a></div>
-             <div className="col-xs-12 col-md-2"><a href="#copackaging" className="product-button"><img src="http://hatchforce.com/wp-content/uploads/2014/06/icon-idea1.png" atl="Ideas"></img></a></div>
-             <div className="col-xs-12 col-md-2"><a href="#pl" className="product-button"><img src="https://www.af-affinity.co.uk/wp-content/uploads/2015/09/business-icon-reversed.png" atl="Business"></img></a></div>
+             <div className="col-xs-12 col-md-2">
+                 <a href="#tape" className="product-button">
+                     <h1 className="product-header">Tape</h1>
+                     <p className="product-description">All types pressure and non sensitive materials on 3 inch cores.  Rewinders.  Turn salvage product into money!</p>
+                     <span><h1>T</h1></span>
+                 </a>
+             </div>
+             <div className="col-xs-12 col-md-2">
+                 <a href="#bulk" className="product-button">
+                     <h1 className="product-header">Plastic Dry Bulk Services</h1>
+                     <p className="product-description">Railcar Box Offs, Sea Container Offloading, etc.</p>
+                     <span><h1>B</h1></span>
+                 </a>
+             </div>
+             <div className="col-xs-12 col-md-2">
+                 <a href="#industrial" className="product-button">
+                     <h1 className="product-header">Light Industrial</h1>
+                     <p className="product-description">This is a description of the services provided</p>
+                     <span><h1>I</h1></span>
+                 </a>
+             </div>
+             <div className="col-xs-12 col-md-2">
+                 <a href="#copackaging" className="product-button">
+                     <h1 className="product-header">Co Packaging</h1>
+                     <p className="product-description">This is a description of the services provided</p>
+                     <span><h1>C</h1></span>
+                 </a>
+             </div>
+             <div className="col-xs-12 col-md-2">
+                 <a href="#pl" className="product-button">
+                     <h1 className="product-header">3PL</h1>
+                     <p className="product-description">This is a description of the services provided under this header</p>
+                     <span><h1>3</h1></span>
+                 </a>
+             </div>
           </div>
         </div>
 

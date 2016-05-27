@@ -12,11 +12,23 @@ var BulkComponent = React.createClass({displayName: "BulkComponent",
         return (
             React.createElement("div", null, 
                 React.createElement(Header, null), 
-                React.createElement("div", {className: "container-fluid"}, 
+                React.createElement("div", {className: "container-fluid default"}, 
                         React.createElement("div", {className: "row paragraph"}, 
                            React.createElement("div", {className: "col-xs-12"}, 
-                             React.createElement("h2", null, "Bulk"), 
-                             React.createElement("p", null, "This is sample text"), 
+                               React.createElement("h2", null, "Plastic Dry Bulk Services"), 
+                               React.createElement("div", {className: "col-md-6"}, 
+                                 React.createElement("ul", null, 
+                                     React.createElement("li", null, "Railcar Box Offs"), 
+                                     React.createElement("li", null, "Sea Container Offloading"), 
+                                     React.createElement("li", null, "Dry Bulk Container Service"), 
+                                     React.createElement("li", null, "Super Sacks or Bags to Tankers"), 
+                                     React.createElement("li", null, "Silo to Tankers Service"), 
+                                     React.createElement("li", null, "Warehouse Storage")
+                                 )
+                               ), 
+                             React.createElement("div", {className: "col-md-6"}
+                             ), 
+                                React.createElement("p", null, "This is sample text"), 
                              React.createElement("a", {href: "#", className: "paragraph-link"}, "TestLink")
                            )
                          ), 
@@ -51,12 +63,16 @@ var CopackagingComponent = React.createClass({displayName: "CopackagingComponent
         return (
             React.createElement("div", null, 
                 React.createElement(Header, null), 
-                React.createElement("div", {className: "container-fluid"}, 
+                React.createElement("div", {className: "container-fluid default"}, 
                         React.createElement("div", {className: "row paragraph"}, 
                            React.createElement("div", {className: "col-xs-12"}, 
-                             React.createElement("h2", null, "Copackaging"), 
-                             React.createElement("p", null, "This is sample text"), 
-                             React.createElement("a", {href: "#", className: "paragraph-link"}, "TestLink")
+                             React.createElement("h2", null, "Co Packaging"), 
+                            React.createElement("div", {className: "col-md-6"}, 
+                                React.createElement("p", null, "This is sample text")
+                            ), 
+                            React.createElement("div", {className: "col-md-6"}, 
+                                React.createElement("p", null, "This is sample text")
+                            )
                            )
                          ), 
                         React.createElement("div", {className: "row image-boxes"}, 
@@ -96,20 +112,36 @@ var Footer = React.createClass({displayName: "Footer",
 
               React.createElement("h1", null, "What we're up to?"), 
               React.createElement("p", null, "Take a look!"), 
-              React.createElement("p", null, "Give us a Call!  ", React.createElement("a", {href: "tel:206-949-7471"}, "206-949-7471"))
+              React.createElement("p", null, "Give us a Call!  ", React.createElement("strong", null, React.createElement("a", {href: "tel:206-949-7471"}, "206-949-7471"))), 
+              React.createElement("div", {className: "alert alert-success contact", role: "alert"}, "Thank you, we'll be in touch!")
           ), 
         React.createElement("div", {className: "col-md-6 column"}, 
-         React.createElement("form", {action: "https://formspree.io/emjwivell@gmail.com", method: "POST"}, 
-             React.createElement("div", {className: "form-group"}, 
-                 React.createElement("label", {id: "InputFirstName"}, "First Name"), 
-                 React.createElement("input", {type: "text", className: "form-control", id: "InputFirstName", placeholder: "i.e. - John", name: "First Name"})
+         React.createElement("form", {action: "", method: ""}, 
+             React.createElement("div", {className: "form-group InputName"}, 
+                 React.createElement("label", {className: "InputName"}, "Name"), 
+                 React.createElement("input", {type: "text", className: "form-control InputName", placeholder: "i.e. - John Smith", name: "Name"})
              ), 
-             React.createElement("div", {className: "form-group"}, 
-                 React.createElement("label", {id: "InputEmail"}, "Email address"), 
-                 React.createElement("input", {type: "email", name: "_replyto", className: "form-control", id: "InputEmail", placeholder: "i.e. - JohnSmith@gmail.com"})
+             React.createElement("div", {className: "form-group InputCompany"}, 
+                 React.createElement("label", {className: "InputCompany"}, "Company"), 
+                 React.createElement("input", {type: "text", className: "form-control InputCompany", placeholder: "i.e. - ABC Inc.", name: "Company"})
+             ), 
+             React.createElement("div", {className: "form-group InputEmail"}, 
+                 React.createElement("label", {className: "InputEmail"}, "Email address"), 
+                 React.createElement("input", {type: "email", name: "_replyto", className: "form-control InputEmail", placeholder: "i.e. - JohnSmith@gmail.com"})
             ), 
-            React.createElement("button", {type: "submit", className: "btn btn-default submit-button"}, "Submit")
-        ))
+            React.createElement("div", {className: "form-group InputPhone"}, 
+                React.createElement("label", {className: "InputPhone"}, "Phone"), 
+                React.createElement("input", {type: "tel", name: "Phone", className: "form-control InputPhone", placeholder: "i.e. - (555) 867-5309"})
+           ), 
+           React.createElement("div", {className: "form-group InputMessage"}, 
+               React.createElement("label", {className: "InputMessage"}, "Message"), 
+               React.createElement("input", {type: "text", name: "Message", className: "form-control InputMessage", placeholder: "i.e. - Pricing info request."})
+          ), 
+            React.createElement("input", {type: "hidden", name: "_next", value: "dist/index.html"}), 
+            React.createElement("input", {type: "hidden", name: "_subject", value: "New Customer!"}), 
+            React.createElement("button", {type: "submit", onclick: "$(\"#contact\").show()", className: "btn btn-default submit-button"}, "Submit")
+        )
+        )
         )
     )
     );
@@ -125,6 +157,8 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var Backbone = require('backbone');
 
+
+
 var Header = React.createClass({displayName: "Header",
   render: function(){
     return (
@@ -136,7 +170,6 @@ var Header = React.createClass({displayName: "Header",
                         React.createElement("img", {height: "100px", src: "images/Logo.png", alt: "Speedway Packaging and Distribution", "data-pin-nopin": "true"})
                     )
                 )
-
             ), 
                   React.createElement("div", {className: "call"}, 
                       React.createElement("a", {href: "tel:206-949-7471", title: "Contact Us"}, React.createElement("span", {className: "glyphicon glyphicon-earphone"}))
@@ -150,7 +183,7 @@ var Header = React.createClass({displayName: "Header",
                     )
                   ), 
                   React.createElement("div", {className: "dropdown"}, 
-                  React.createElement("button", {type: "button", id: "nav", "aria-label": "Menu", "data-toggle": "dropdown", "aria-haspopup": "true", "aria-expanded": "false"}, 
+                  React.createElement("button", {type: "button", className: "btn dropdown-toggle", id: "nav", "aria-label": "Menu", "data-toggle": "dropdown", "aria-haspopup": "true", "aria-expanded": "false"}, 
                       React.createElement("span", {className: "glyphicon glyphicon-menu-hamburger", "aria-hidden": "true"})
                   ), 
                   React.createElement("ul", {className: "dropdown-menu dropdown-menu-right", "aria-labelledby": "nav"}, 
@@ -186,32 +219,46 @@ var HomePageComponent = React.createClass({displayName: "HomePageComponent",
       React.createElement("div", null, React.createElement(Header, null)), 
       React.createElement("div", {className: "container-fluid"}, 
             React.createElement("div", {className: "row"}
-                
+
           ), 
-          React.createElement("div", {className: "collapse navbar-collapse"}, 
-          React.createElement("ul", {className: "nav navbar-nav"}, 
-            React.createElement("li", {className: "active"}, React.createElement("a", {href: "#"}, React.createElement("span", {className: "glyphicon glyphicon-home"}), 
-             "Home")), 
-             React.createElement("li", null, React.createElement("a", {href: "#"}, React.createElement("span", {className: "glyphicon glyphicon-star"}), " Top" + ' ' +
-                 "Destinations")), 
-             React.createElement("li", {className: "dropdown"}, 
-                  React.createElement("a", {href: "#", className: "dropdown-toggle", "data-toggle": "dropdown", "aria-haspopup": "true", "aria-expanded": "false"}, 
-                      React.createElement("span", {className: "glyphicon glyphicon-user"}), " About Us", React.createElement("b", {className: "caret"})), 
-                  React.createElement("ul", {className: "dropdown-menu"}, 
-                      React.createElement("li", null, React.createElement("a", {href: "#"}, "example")), 
-                      React.createElement("li", null, React.createElement("a", {href: "#"}, "example")), 
-                      React.createElement("li", null, React.createElement("a", {href: "#"}, "example"))
-                  )
-              )
-          )
-          ), 
+
         React.createElement("div", {className: "row"}, 
           React.createElement("div", {className: "products col-sm-8"}, 
-             React.createElement("div", {className: "col-xs-12 col-md-2"}, React.createElement("a", {href: "#tape", className: "product-button"}, React.createElement("img", {src: "http://2.bp.blogspot.com/-ZzTduUEm7IA/VGpoX_uG0-I/AAAAAAAAMUI/5GPPgkbwmO0/s1600/icon_questing_tape_red-14908ebf916a13eac2f77c0b1528e261.png", atl: "Tape"}))), 
-             React.createElement("div", {className: "col-xs-12 col-md-2"}, React.createElement("a", {href: "#bulk", className: "product-button"}, React.createElement("img", {src: "http://www.alminter.com.mx/img/alminter/slider/ahorre.png", atl: "Money"}))), 
-             React.createElement("div", {className: "col-xs-12 col-md-2"}, React.createElement("a", {href: "#industrial", className: "product-button"}, React.createElement("img", {src: "http://sellingwithinsight.com/wp-content/uploads/2016/04/red-handshake-icon-handshake-icon.jpg", atl: "Work Together"}))), 
-             React.createElement("div", {className: "col-xs-12 col-md-2"}, React.createElement("a", {href: "#copackaging", className: "product-button"}, React.createElement("img", {src: "http://hatchforce.com/wp-content/uploads/2014/06/icon-idea1.png", atl: "Ideas"}))), 
-             React.createElement("div", {className: "col-xs-12 col-md-2"}, React.createElement("a", {href: "#pl", className: "product-button"}, React.createElement("img", {src: "https://www.af-affinity.co.uk/wp-content/uploads/2015/09/business-icon-reversed.png", atl: "Business"})))
+             React.createElement("div", {className: "col-xs-12 col-md-2"}, 
+                 React.createElement("a", {href: "#tape", className: "product-button"}, 
+                     React.createElement("h1", {className: "product-header"}, "Tape"), 
+                     React.createElement("p", {className: "product-description"}, "All types pressure and non sensitive materials on 3 inch cores.  Rewinders.  Turn salvage product into money!"), 
+                     React.createElement("span", null, React.createElement("h1", null, "T"))
+                 )
+             ), 
+             React.createElement("div", {className: "col-xs-12 col-md-2"}, 
+                 React.createElement("a", {href: "#bulk", className: "product-button"}, 
+                     React.createElement("h1", {className: "product-header"}, "Plastic Dry Bulk Services"), 
+                     React.createElement("p", {className: "product-description"}, "Railcar Box Offs, Sea Container Offloading, etc."), 
+                     React.createElement("span", null, React.createElement("h1", null, "B"))
+                 )
+             ), 
+             React.createElement("div", {className: "col-xs-12 col-md-2"}, 
+                 React.createElement("a", {href: "#industrial", className: "product-button"}, 
+                     React.createElement("h1", {className: "product-header"}, "Light Industrial"), 
+                     React.createElement("p", {className: "product-description"}, "This is a description of the services provided"), 
+                     React.createElement("span", null, React.createElement("h1", null, "I"))
+                 )
+             ), 
+             React.createElement("div", {className: "col-xs-12 col-md-2"}, 
+                 React.createElement("a", {href: "#copackaging", className: "product-button"}, 
+                     React.createElement("h1", {className: "product-header"}, "Co Packaging"), 
+                     React.createElement("p", {className: "product-description"}, "This is a description of the services provided"), 
+                     React.createElement("span", null, React.createElement("h1", null, "C"))
+                 )
+             ), 
+             React.createElement("div", {className: "col-xs-12 col-md-2"}, 
+                 React.createElement("a", {href: "#pl", className: "product-button"}, 
+                     React.createElement("h1", {className: "product-header"}, "3PL"), 
+                     React.createElement("p", {className: "product-description"}, "This is a description of the services provided under this header"), 
+                     React.createElement("span", null, React.createElement("h1", null, "3"))
+                 )
+             )
           )
         ), 
 
@@ -278,12 +325,16 @@ var IndustrialComponent = React.createClass({displayName: "IndustrialComponent",
         return (
             React.createElement("div", null, 
                 React.createElement(Header, null), 
-                React.createElement("div", {className: "container-fluid"}, 
+                React.createElement("div", {className: "container-fluid default"}, 
                         React.createElement("div", {className: "row paragraph"}, 
                            React.createElement("div", {className: "col-xs-12"}, 
-                             React.createElement("h2", null, "Industrial"), 
-                             React.createElement("p", null, "This is sample text"), 
-                             React.createElement("a", {href: "#", className: "paragraph-link"}, "TestLink")
+                             React.createElement("h2", null, "Light Industrial"), 
+                             React.createElement("div", {className: "col-md-6"}, 
+                                React.createElement("p", null, "This is sample text")
+                             ), 
+                             React.createElement("div", {className: "col-md-6"}, 
+                                 React.createElement("p", null, "This is sample text")
+                             )
                            )
                          ), 
                         React.createElement("div", {className: "row image-boxes"}, 
@@ -317,12 +368,16 @@ var PlComponent = React.createClass({displayName: "PlComponent",
         return (
             React.createElement("div", null, 
                 React.createElement(Header, null), 
-                React.createElement("div", {className: "container-fluid"}, 
+                React.createElement("div", {className: "container-fluid default"}, 
                         React.createElement("div", {className: "row paragraph"}, 
                            React.createElement("div", {className: "col-xs-12"}, 
                              React.createElement("h2", null, "3PL"), 
-                             React.createElement("p", null, "This is sample text"), 
-                             React.createElement("a", {href: "#", className: "paragraph-link"}, "TestLink")
+                             React.createElement("div", {className: "col-md-6"}, 
+                                 React.createElement("p", null, "This is sample text")
+                             ), 
+                             React.createElement("div", {className: "col-md-6"}, 
+                                 React.createElement("p", null, "This is sample text")
+                             )
                            )
                          ), 
                         React.createElement("div", {className: "row image-boxes"}, 
@@ -356,20 +411,31 @@ var TapeComponent = React.createClass({displayName: "TapeComponent",
         return (
             React.createElement("div", null, 
                 React.createElement(Header, null), 
-                React.createElement("div", {className: "container-fluid"}, 
+                React.createElement("div", {className: "container-fluid default"}, 
                         React.createElement("div", {className: "row paragraph"}, 
                            React.createElement("div", {className: "col-xs-12"}, 
-                             React.createElement("h2", null, "Tape"), 
-                             React.createElement("p", null, "This is sample text"), 
-                             React.createElement("a", {href: "#", className: "paragraph-link"}, "TestLink")
+                               React.createElement("h2", null, "Tape"), 
+                               React.createElement("div", {className: "col-md-6"}, 
+                                 React.createElement("ul", null, 
+                                     React.createElement("li", null, "Width: 1.6 M"), 
+                                     React.createElement("li", null, "Speed: 200m per Minute"), 
+                                     React.createElement("li", null, "Max Unwind OD: 800mm"), 
+                                     React.createElement("li", null, "Max Rewind OD: "), 
+                                     React.createElement("li", null, "4 shafts exchange 150mm"), 
+                                     React.createElement("li", null, "2 Shafts exchange 280mm")
+                                 )
+                               ), 
+                               React.createElement("div", {className: "col-md-6"}, 
+                                   React.createElement("p", null, "kjnsdfbjkndfkjn")
+                               )
                            )
                          ), 
                         React.createElement("div", {className: "row image-boxes"}, 
                           React.createElement("div", {className: "col-xs-12 col-sm-12 col-md-6 col-lg-6 picbox1"}, 
-                            React.createElement("img", {src: "http://www.goglo.net/images/fp-rs-images-376x200/Warehouse_and_Cargo_Insurance.jpg", alt: ""})
+                            React.createElement("img", {src: "../app/images/VideoImg1.png", alt: ""})
                           ), 
                           React.createElement("div", {className: "col-xs-12 col-sm-12 col-md-6 col-lg-6 picbox2"}, 
-                            React.createElement("img", {src: "http://www.goglo.net/images/fp-rs-images-376x200/Warehouse_and_Cargo_Insurance.jpg", alt: ""})
+                            React.createElement("img", {src: "../app/images/Picture1.png", alt: ""})
                           )
                         )
                 ), 

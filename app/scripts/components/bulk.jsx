@@ -10,11 +10,23 @@ var BulkComponent = React.createClass({
         return (
             <div>
                 <Header/>
-                <div className="container-fluid">
+                <div className="container-fluid default">
                         <div className="row paragraph">
                            <div className="col-xs-12">
-                             <h2>Bulk</h2>
-                             <p>This is sample text</p>
+                               <h2>Plastic Dry Bulk Services</h2>
+                               <div className="col-md-6">
+                                 <ul>
+                                     <li>Railcar Box Offs</li>
+                                     <li>Sea Container Offloading</li>
+                                     <li>Dry Bulk Container Service</li>
+                                     <li>Super Sacks or Bags to Tankers</li>
+                                     <li>Silo to Tankers Service</li>
+                                     <li>Warehouse Storage</li>
+                                 </ul>
+                               </div>
+                             <div className="col-md-6">
+                             </div>
+                                <p>This is sample text</p>
                              <a href="#" className="paragraph-link">TestLink</a>
                            </div>
                          </div>
