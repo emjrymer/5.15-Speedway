@@ -32,7 +32,7 @@ var TapeComponent = React.createClass({
                         <div className="row image-boxes">
                           <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 picbox1">
                               <video controls>
-                                <source src="HY-BD.mp4" type="video/mp4">
+                                <source src="images/HY-BD.mp4" type="video/mp4" />
                                 Your browser does not support HTML5 video.
                               </video>
                           </div>

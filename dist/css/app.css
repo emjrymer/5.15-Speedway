@@ -5877,6 +5877,7 @@ body {
 .footer {
   height: 22em;
   margin-top: 10px;
+  border: 2px solid black;
   left: 0px;
   bottom: 0px;
   width: 100%;
@@ -5967,7 +5968,8 @@ button {
   border: 1px solid #696262; }
 
 .default {
-  background: #fff; }
+  background: #fff;
+  height: 870px; }
 
 .main-nav {
   display: inline-block;
@@ -6048,6 +6050,17 @@ button {
     border-right: 3px solid #fff;
     border-left: 3px solid #fff;
     width: 100%; }
+    .picbox2 img video {
+      border-top: 6px solid #fff;
+      border-bottom: 3px solid #fff;
+      border-right: 3px solid #fff;
+      border-left: 3px solid #fff; }
+
+video {
+  display: inline-block;
+  vertical-align: baseline;
+  height: 424px;
+  margin-left: 30px; }
 
 .image-boxes {
   margin-top: 20px; }
