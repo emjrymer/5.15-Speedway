@@ -111,10 +111,11 @@ body {
 
 .footer {
     height: 22em;
-    margin-top: 10px;
-    border: 2px solid black;
-    left:0px;
-    bottom:0px;
+    margin-top: 5em;
+    // border: 2px solid black;
+    right: 0;
+    left: 0;
+    bottom: 0;
     width:100%;
     background-image: url('http://previews.123rf.com/images/frameangel/frameangel1412/frameangel141200081/34473325-Metal-de-diamante-de-acero-sin-costura-patr-n-placa-textura-de-fondo-Foto-de-archivo.jpg');
     color: #gray;
@@ -278,6 +279,12 @@ button {
     text-decoration: none;
     color: black;
   }
+}
+
+.li_description {
+    font-weight: 400;
+    text-align: left;
+    font-size: 18px;
 }
 
 .carousel-inner .item img {

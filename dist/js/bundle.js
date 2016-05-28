@@ -18,12 +18,12 @@ var BulkComponent = React.createClass({displayName: "BulkComponent",
                                React.createElement("h2", null, "Plastic Dry Bulk Services"), 
                                React.createElement("div", {className: "col-md-6"}, 
                                  React.createElement("ul", null, 
-                                     React.createElement("li", null, "Railcar Box Offs"), 
-                                     React.createElement("li", null, "Sea Container Offloading"), 
-                                     React.createElement("li", null, "Dry Bulk Container Service"), 
-                                     React.createElement("li", null, "Super Sacks or Bags to Tankers"), 
-                                     React.createElement("li", null, "Silo to Tankers Service"), 
-                                     React.createElement("li", null, "Warehouse Storage")
+                                     React.createElement("li", null, React.createElement("h1", {className: "li_description"}, "Railcar Box Offs")), 
+                                     React.createElement("li", null, React.createElement("h1", {className: "li_description"}, "Sea Container Offloading")), 
+                                     React.createElement("li", null, React.createElement("h1", {className: "li_description"}, "Dry Bulk Container Service")), 
+                                     React.createElement("li", null, React.createElement("h1", {className: "li_description"}, "Super Sacks or Bags to Tankers")), 
+                                     React.createElement("li", null, React.createElement("h1", {className: "li_description"}, "Silo to Tankers Service")), 
+                                     React.createElement("li", null, React.createElement("h1", {className: "li_description"}, "Warehouse Storage"))
                                  )
                                ), 
                              React.createElement("div", {className: "col-md-6"}
@@ -34,7 +34,7 @@ var BulkComponent = React.createClass({displayName: "BulkComponent",
                          ), 
                         React.createElement("div", {className: "row image-boxes"}, 
                           React.createElement("div", {className: "col-xs-12 col-sm-12 col-md-6 col-lg-6 picbox1"}, 
-                            React.createElement("img", {src: "images/virgin_pp_polypropylene.jpg", alt: ""})
+                            React.createElement("img", {src: "images/virgin_polypropylene.jpg", alt: ""})
                           ), 
                           React.createElement("div", {className: "col-xs-12 col-sm-12 col-md-6 col-lg-6 picbox2"}, 
                             React.createElement("img", {src: "http://www.goglo.net/images/fp-rs-images-376x200/Warehouse_and_Cargo_Insurance.jpg", alt: ""})
@@ -417,12 +417,14 @@ var TapeComponent = React.createClass({displayName: "TapeComponent",
                                React.createElement("h2", null, "Tape"), 
                                React.createElement("div", {className: "col-md-6"}, 
                                  React.createElement("ul", null, 
-                                     React.createElement("li", null, "Width: 1.6 M"), 
-                                     React.createElement("li", null, "Speed: 200m per Minute"), 
-                                     React.createElement("li", null, "Max Unwind OD: 800mm"), 
-                                     React.createElement("li", null, "Max Rewind OD: "), 
-                                     React.createElement("li", null, "4 shafts exchange 150mm"), 
-                                     React.createElement("li", null, "2 Shafts exchange 280mm")
+                                     React.createElement("li", null, React.createElement("h1", {className: "li_description"}, "Width: 1.6 M")), 
+                                     React.createElement("li", null, React.createElement("h1", {className: "li_description"}, "Speed: 200m per Minute")), 
+                                     React.createElement("li", null, React.createElement("h1", {className: "li_description"}, "Max Unwind OD: 800mm")), 
+                                     React.createElement("li", null, React.createElement("h1", {className: "li_description"}, "Max Rewind OD: ")), 
+                                        React.createElement("ul", null, 
+                                             React.createElement("li", null, React.createElement("h1", {className: "li_description"}, "4 shafts exchange 150mm")), 
+                                             React.createElement("li", null, React.createElement("h1", {className: "li_description"}, "2 Shafts exchange 280mm"))
+                                        )
                                  )
                                ), 
                                React.createElement("div", {className: "col-md-6"}, 

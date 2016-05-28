@@ -16,12 +16,14 @@ var TapeComponent = React.createClass({
                                <h2>Tape</h2>
                                <div className="col-md-6">
                                  <ul>
-                                     <li>Width: 1.6 M</li>
-                                     <li>Speed: 200m per Minute</li>
-                                     <li>Max Unwind OD: 800mm</li>
-                                     <li>Max Rewind OD: </li>
-                                     <li>4 shafts exchange 150mm</li>
-                                     <li>2 Shafts exchange 280mm</li>
+                                     <li><h1 className="li_description">Width: 1.6 M</h1></li>
+                                     <li><h1 className="li_description">Speed: 200m per Minute</h1></li>
+                                     <li><h1 className="li_description">Max Unwind OD: 800mm</h1></li>
+                                     <li><h1 className="li_description">Max Rewind OD: </h1></li>
+                                        <ul>
+                                             <li><h1 className="li_description">4 shafts exchange 150mm</h1></li>
+                                             <li><h1 className="li_description">2 Shafts exchange 280mm</h1></li>
+                                        </ul>
                                  </ul>
                                </div>
                                <div className="col-md-6">
