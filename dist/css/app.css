@@ -5824,6 +5824,30 @@ body {
   body a {
     text-decoration: none; }
 
+.cd-fixed-bg {
+  min-height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.cd-fixed-bg.cd-bg-1 {
+  background-image: url("../images/forklift.png"); }
+
+.cd-fixed-bg.cd-bg-2 {
+  background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPFsjNd-b_wCLpu-WM5XpPOX5KWX5DgcqjWIdqpvi8ykBxGJPJ");
+  padding: 10px; }
+
+.cd-fixed-bg.cd-bg-3 {
+  background-image: url("../imgages/Picture2.png"); }
+
+.cd-fixed-bg.cd-bg-4 {
+  background-image: url("../images/forklift.png");
+  min-height: 80%; }
+
+.cd-scrolling-bg {
+  min-height: 100%; }
+
 .address a {
   color: black;
   text-decoration: none; }
@@ -5840,12 +5864,15 @@ body {
   background-color: #fff;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.35); }
 
-.col-xs-12.col-md-2 {
-  background-color: #eee;
-  padding: 1% 2%;
-  margin: auto 19px;
+a.product-button {
+  border: 2px solid white;
+  background-color: #fff;
+  padding: 17px 40px;
+  width: 100%;
+  margin: auto;
   text-align: center;
-  border-radius: 22px; }
+  text-decoration: none;
+  color: #fff; }
 
 .product-header {
   font-weight: bold;
@@ -5860,30 +5887,20 @@ body {
   padding: 5px;
   border-radius: 10px; }
 
-.products {
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  margin-right: 5%;
-  margin-top: 380px;
-  margin-bottom: 0px;
-  border: 2px solid black;
-  width: 100%;
-  height: auto;
-  background: #fff;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.35); }
-
 .footer {
   height: 22em;
-  margin-top: 5em;
+  margin-top: 2em;
   right: 0;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-image: url("http://previews.123rf.com/images/frameangel/frameangel1412/frameangel141200081/34473325-Metal-de-diamante-de-acero-sin-costura-patr-n-placa-textura-de-fondo-Foto-de-archivo.jpg");
+  background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPFsjNd-b_wCLpu-WM5XpPOX5KWX5DgcqjWIdqpvi8ykBxGJPJ");
   color: #gray;
-  font-size: 13px; }
+  font-size: 13px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center; }
 
 .col-md-2 {
   margin: 0 auto; }
@@ -5954,8 +5971,8 @@ button {
 .container-fluid {
   opacity: 0.9;
   -webkit-background-size: cover;
+  background-attachment: fixed;
   background-size: cover;
-  background-image: url("http://www.goglo.net/images/fp-rs-images-376x200/Warehouse_and_Cargo_Insurance.jpg");
   height: 570px;
   color: black;
   text-transform: uppercase;
