@@ -13,13 +13,21 @@ var Footer = React.createClass({
                   <h1>Our Mission</h1>
                   <p>Satisfy Our Customers and Continuously Improve</p>
               </div>
+              <div className="address">
+                <a target="_blank" href="https://www.google.com/maps/place/Speedway+Packaging+and+Distribution/@34.8677333,-82.2420914,15z/data=!4m5!3m4!1s0x0:0xc666b001e6b56b9d!8m2!3d34.8677333!4d-82.2420914">
+                 <address>
+                      1221B S. Batesville Rd.<br/>
+                      Greer, SC 29681
+                </address>
+                </a>
+              </div>
 
               <h1>What we're up to?</h1>
               <p>Take a look!</p>
               <p>Give us a Call!  <strong><a href="tel:206-949-7471">206-949-7471</a></strong></p>
               <div className="alert alert-success contact" role="alert">Thank you, we'll be in touch!</div>
           </div>
-        <div className="col-md-6 column">
+        <div className="col-md-6 column" id="contact">
          <form action="https://formspree.io/emjwivell@gmail.com" method="POST">
              <div className="form-group InputName">
                  <label className="InputName">Name</label>

@@ -160,13 +160,21 @@ var Footer = React.createClass({displayName: "Footer",
                   React.createElement("h1", null, "Our Mission"), 
                   React.createElement("p", null, "Satisfy Our Customers and Continuously Improve")
               ), 
+              React.createElement("div", {className: "address"}, 
+                React.createElement("a", {target: "_blank", href: "https://www.google.com/maps/place/Speedway+Packaging+and+Distribution/@34.8677333,-82.2420914,15z/data=!4m5!3m4!1s0x0:0xc666b001e6b56b9d!8m2!3d34.8677333!4d-82.2420914"}, 
+                 React.createElement("address", null, 
+                      "1221B S. Batesville Rd.", React.createElement("br", null), 
+                      "Greer, SC 29681"
+                )
+                )
+              ), 
 
               React.createElement("h1", null, "What we're up to?"), 
               React.createElement("p", null, "Take a look!"), 
               React.createElement("p", null, "Give us a Call!  ", React.createElement("strong", null, React.createElement("a", {href: "tel:206-949-7471"}, "206-949-7471"))), 
               React.createElement("div", {className: "alert alert-success contact", role: "alert"}, "Thank you, we'll be in touch!")
           ), 
-        React.createElement("div", {className: "col-md-6 column"}, 
+        React.createElement("div", {className: "col-md-6 column", id: "contact"}, 
          React.createElement("form", {action: "https://formspree.io/emjwivell@gmail.com", method: "POST"}, 
              React.createElement("div", {className: "form-group InputName"}, 
                  React.createElement("label", {className: "InputName"}, "Name"), 
@@ -222,31 +230,14 @@ var Header = React.createClass({displayName: "Header",
                     )
                 )
             ), 
-                  React.createElement("div", {className: "call"}, 
-                      React.createElement("a", {href: "tel:206-949-7471", title: "Contact Us"}, React.createElement("span", {className: "glyphicon glyphicon-earphone"}))
-                  ), 
-                  React.createElement("div", {className: "address"}, 
-                    React.createElement("a", {target: "_blank", href: "https://www.google.com/maps/place/Speedway+Packaging+and+Distribution/@34.8677333,-82.2420914,15z/data=!4m5!3m4!1s0x0:0xc666b001e6b56b9d!8m2!3d34.8677333!4d-82.2420914"}, 
-                     React.createElement("address", null, 
-                          "1221B S. Batesville Rd.", React.createElement("br", null), 
-                          "Greer, SC 29681"
-                    )
-                    )
-                  ), 
-                  React.createElement("div", {className: "dropdown"}, 
-                  React.createElement("button", {type: "button", className: "btn dropdown-toggle", id: "nav", "aria-label": "Menu", "data-toggle": "dropdown", "aria-haspopup": "true", "aria-expanded": "false"}, 
-                      React.createElement("span", {className: "glyphicon glyphicon-menu-hamburger", "aria-hidden": "true"})
-                  ), 
-                  React.createElement("ul", {className: "dropdown-menu dropdown-menu-right", "aria-labelledby": "nav"}, 
+                  React.createElement("ul", {className: "list-inline"}, 
                        React.createElement("li", null, React.createElement("a", {href: "#tape"}, "Tape")), 
                        React.createElement("li", null, React.createElement("a", {href: "#bulk"}, "Bulk")), 
                        React.createElement("li", null, React.createElement("a", {href: "#industrial"}, "Industrial")), 
                        React.createElement("li", null, React.createElement("a", {href: "#copackaging"}, "Co Packaging")), 
                        React.createElement("li", null, React.createElement("a", {href: "#pl"}, "3PL")), 
-                       React.createElement("li", {role: "separator", className: "divider"}), 
-                       React.createElement("li", null, React.createElement("a", {href: "tel:206-949-7471", title: "Contact Us"}, React.createElement("span", {className: "glyphicon glyphicon-earphone"}), "  ", React.createElement("strong", null, "Call Us")))
+                       React.createElement("li", null, React.createElement("a", {href: "#contact"}, "Contact Us"))
                      )
-                  )
         )
     );
   }
@@ -274,22 +265,18 @@ var HomePageComponent = React.createClass({displayName: "HomePageComponent",
           React.createElement("div", {className: "row"}), 
     React.createElement("div", {className: "cd-fixed-bg cd-bg-1"}
     ), 
-    React.createElement("div", {className: "cd-scrolling-bg cd-color-2"}, 
+    React.createElement("div", {className: "cd-scrolling-sm cd-color-2"}, 
 		React.createElement("div", {className: "cd-container"}, 
-            React.createElement("div", {className: "col-md-6"}, 
-                React.createElement("h1", null, "Our Mission:"), 
-                React.createElement("h2", null, "jndfjndfvjnadfvjknadfkvjndafvjk"), 
+            React.createElement("center", null, 
+                React.createElement("div", null, 
                 React.createElement("h1", null, "Celebrating 17 Years of Success!")
-            ), 
-            React.createElement("div", {className: "col-md-6"}, 
-            React.createElement("h1", null, React.createElement("button", null, "Call Us")), 
-            React.createElement("p", null, "kjbvslkndfv"), 
-            React.createElement("ul", null, 
-                React.createElement("li", null, "kjsndfv"), 
-                React.createElement("li", null, "iuahdfhb"), 
-                React.createElement("li", null, "kjbdnvka")
-            )
-            )
+                ), 
+                React.createElement("h1", null, "Our Mission:"), 
+                    React.createElement("h3", null, "Satisfy Our Customers and Continuously Improve"), 
+                    React.createElement("div", {className: "call"}, 
+                        React.createElement("a", {href: "tel:206-949-7471", title: "Contact Us"}, React.createElement("h2", null, React.createElement("span", {className: "glyphicon glyphicon-earphone"})), React.createElement("h1", null, " Call Us"))
+                    )
+        )
 		)
 	), 
 
@@ -305,13 +292,12 @@ var HomePageComponent = React.createClass({displayName: "HomePageComponent",
                     React.createElement("img", {src: "https://unsplash.global.ssl.fastly.net/assets/core/logo-black-b37a09de4a228cd8fb72adbabc95931c5090611a0cae8e76f1fd077d378ec080.svg"}), 
                         React.createElement("img", {src: "https://unsplash.global.ssl.fastly.net/assets/core/logo-black-b37a09de4a228cd8fb72adbabc95931c5090611a0cae8e76f1fd077d378ec080.svg"}), 
             React.createElement("img", {src: "https://unsplash.global.ssl.fastly.net/assets/core/logo-black-b37a09de4a228cd8fb72adbabc95931c5090611a0cae8e76f1fd077d378ec080.svg"})
-		), 
-        React.createElement("img", {src: "https://unsplash.global.ssl.fastly.net/assets/core/logo-black-b37a09de4a228cd8fb72adbabc95931c5090611a0cae8e76f1fd077d378ec080.svg"}), 
-            React.createElement("img", {src: "https://unsplash.global.ssl.fastly.net/assets/core/logo-black-b37a09de4a228cd8fb72adbabc95931c5090611a0cae8e76f1fd077d378ec080.svg"}), 
-                React.createElement("img", {src: "https://unsplash.global.ssl.fastly.net/assets/core/logo-black-b37a09de4a228cd8fb72adbabc95931c5090611a0cae8e76f1fd077d378ec080.svg"}), 
-                    React.createElement("img", {src: "https://unsplash.global.ssl.fastly.net/assets/core/logo-black-b37a09de4a228cd8fb72adbabc95931c5090611a0cae8e76f1fd077d378ec080.svg"})
-
+		)
 	), 
+    React.createElement("div", {className: "cd-fixed-bg cd-bg-4"}, 
+        React.createElement("h1", null, "here")
+        ), 
+
 
         React.createElement("div", null, 
             React.createElement(Footer, null)
