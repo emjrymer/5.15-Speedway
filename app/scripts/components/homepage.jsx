@@ -20,19 +20,21 @@ var HomePageComponent = React.createClass({
         <div className="img-overlay-1"></div>
     </div>
 
-
-
     <div className="cd-fixed-bg cd-bg-2">
 		<center>
             <h1>Explore Speedway</h1>
             </center>
         <Services />
+        <center>
+        <h1 className="speedway-is">Speedway is..</h1>
+        </center>
 	</div>
 
-    <div className="cd-fixed-bg cd-bg-4">
-
-        </div>
-
+    <div className="cd-fixed-bg cd-bg-1">
+		<center>
+            <h1 className="middle-explore">Explore Speedway</h1>
+            </center>
+	</div>
 
         <div>
             <Footer/>

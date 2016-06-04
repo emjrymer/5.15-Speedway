@@ -94,7 +94,8 @@ h1 {
 }
 .cd-fixed-bg.cd-bg-2 {
   background-color: #fff;
-  padding: 10px;
+  // padding: 10px;
+  // margin-bottom: 50px;
 }
 .cd-fixed-bg.cd-bg-3 {
   background-image: url("../imgages/Picture2.png");
@@ -174,10 +175,27 @@ h1 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    border-right: 5px solid transparent;
-    border-left: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-top: 10px solid transparent;
+    // border-right: 5px solid transparent;
+    // border-left: 5px solid transparent;
+    // border-bottom: 5px solid transparent;
+    // border-top: 10px solid transparent;
+}
+
+// .speedway-is {
+//     width: 100%;
+//     transition: background-color 1s;
+//     transition: color 1s;
+//
+// }
+//
+// .speedway-is:hover {
+//     background-color: black;
+//     opacity: 0.9;
+//     color: #fff;
+// }
+
+.middle-explore {
+    margin-bottom: 20px;
 }
 
 .product-button:first-child {
@@ -216,6 +234,8 @@ center > h1 {
     font-size: 40px;
     letter-spacing: 7px;
     font-weight: bolder;
+    margin-top: 40px;
+    margin-bottom: 60px;
 }
 
 .sr-t:hover {
@@ -604,33 +624,33 @@ video {
 }
 
 .InputName {
-    width: 13em;
-    border-radius: 5px;
-    float: left;
-}
-
-.InputCompany {
-    width: 218px;
-    border-radius: 5px;
-    float: left;
-    margin-left: 5em;
-}
-
-.InputEmail {
     width: 18em;
     border-radius: 5px;
     float: left;
 }
 
-.InputPhone {
-    width: 151px;
+.InputCompany {
+    width: 17em;
     border-radius: 5px;
     float: left;
-    margin-left: 5em;
+    margin-left: 2em;
+}
+
+.InputEmail {
+    width: 23em;
+    border-radius: 5px;
+    float: left;
+}
+
+.InputPhone {
+    width: 175px;
+    border-radius: 5px;
+    float: left;
+    margin-left: 2em;
 }
 
 .InputMessage {
-    width: 521px;
+    width: 531px;
     border-radius: 5px;
     clear: both;
 }
@@ -652,11 +672,11 @@ label {
 }
 
 label.InputCompany {
-    margin-left: 70px;
+    margin-left: 30px;
 }
 
 label.InputPhone {
-    margin-left: 70px;
+    margin-left: 30px;
 }
 
 form > div {

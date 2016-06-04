@@ -5880,8 +5880,7 @@ h1 {
   transition: all 0.5s ease-out; }
 
 .cd-fixed-bg.cd-bg-2 {
-  background-color: #fff;
-  padding: 10px; }
+  background-color: #fff; }
 
 .cd-fixed-bg.cd-bg-3 {
   background-image: url("../imgages/Picture2.png"); }
@@ -5950,11 +5949,10 @@ h1 {
   /* min-height: 100%; */
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
-  border-right: 5px solid transparent;
-  border-left: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  border-top: 10px solid transparent; }
+  background-position: center center; }
+
+.middle-explore {
+  margin-bottom: 20px; }
 
 .product-button:first-child {
   border-left: none; }
@@ -5985,7 +5983,9 @@ center > h1 {
   font-family: 'Muli', sans-serif;
   font-size: 40px;
   letter-spacing: 7px;
-  font-weight: bolder; }
+  font-weight: bolder;
+  margin-top: 40px;
+  margin-bottom: 60px; }
 
 .sr-t:hover {
   background-image: url("../images/Tape-blur-darken-50.png");
@@ -6248,29 +6248,29 @@ video {
     width: 100%; }
 
 .InputName {
-  width: 13em;
-  border-radius: 5px;
-  float: left; }
-
-.InputCompany {
-  width: 218px;
-  border-radius: 5px;
-  float: left;
-  margin-left: 5em; }
-
-.InputEmail {
   width: 18em;
   border-radius: 5px;
   float: left; }
 
-.InputPhone {
-  width: 151px;
+.InputCompany {
+  width: 17em;
   border-radius: 5px;
   float: left;
-  margin-left: 5em; }
+  margin-left: 2em; }
+
+.InputEmail {
+  width: 23em;
+  border-radius: 5px;
+  float: left; }
+
+.InputPhone {
+  width: 175px;
+  border-radius: 5px;
+  float: left;
+  margin-left: 2em; }
 
 .InputMessage {
-  width: 521px;
+  width: 531px;
   border-radius: 5px;
   clear: both; }
 
@@ -6289,10 +6289,10 @@ label {
   letter-spacing: 2px; }
 
 label.InputCompany {
-  margin-left: 70px; }
+  margin-left: 30px; }
 
 label.InputPhone {
-  margin-left: 70px; }
+  margin-left: 30px; }
 
 form > div {
   position: relative; }

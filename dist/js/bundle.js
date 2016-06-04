@@ -269,19 +269,21 @@ var HomePageComponent = React.createClass({displayName: "HomePageComponent",
         React.createElement("div", {className: "img-overlay-1"})
     ), 
 
-
-
     React.createElement("div", {className: "cd-fixed-bg cd-bg-2"}, 
 		React.createElement("center", null, 
             React.createElement("h1", null, "Explore Speedway")
             ), 
-        React.createElement(Services, null)
+        React.createElement(Services, null), 
+        React.createElement("center", null, 
+        React.createElement("h1", {className: "speedway-is"}, "Speedway is..")
+        )
 	), 
 
-    React.createElement("div", {className: "cd-fixed-bg cd-bg-4"}
-
-        ), 
-
+    React.createElement("div", {className: "cd-fixed-bg cd-bg-1"}, 
+		React.createElement("center", null, 
+            React.createElement("h1", {className: "middle-explore"}, "Explore Speedway")
+            )
+	), 
 
         React.createElement("div", null, 
             React.createElement(Footer, null)
