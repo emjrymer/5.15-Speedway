@@ -226,7 +226,7 @@ var Header = React.createClass({displayName: "Header",
             React.createElement("div", {className: "holder"}, 
                 React.createElement("div", {className: "logoHolder"}, 
                     React.createElement("a", {href: "#", title: "Speedway | Packaging and Distribution"}, 
-                        React.createElement("img", {height: "70px", src: "images/speedway logo.jpg", alt: "Speedway Packaging and Distribution", "data-pin-nopin": "true"})
+                        React.createElement("img", {height: "75px", src: "images/speedway logo.jpg", alt: "Speedway Packaging and Distribution", "data-pin-nopin": "true"})
                     )
                 )
             ), 
@@ -263,39 +263,23 @@ var HomePageComponent = React.createClass({displayName: "HomePageComponent",
       React.createElement("div", null, React.createElement(Header, null)), 
       React.createElement("div", {className: "container-fluid"}, 
           React.createElement("div", {className: "row"}), 
-    React.createElement("div", {className: "cd-fixed-bg cd-bg-1"}
+
+    React.createElement("div", {className: "cd-fixed-bg cd-bg-1 header-img"}, 
+        React.createElement("h1", {className: "celebrating"}, "Celebrating", React.createElement("br", null), React.createElement("span", {className: "years"}, "17"), React.createElement("br", null), "Years of Success"), 
+        React.createElement("div", {className: "img-overlay-1"})
     ), 
-    React.createElement("div", {className: "cd-scrolling-sm cd-color-2"}, 
-		React.createElement("div", {className: "cd-container"}, 
-            React.createElement("center", null, 
-                React.createElement("div", null, 
-                React.createElement("h1", null, "Celebrating 17 Years of Success!")
-                ), 
-                React.createElement("h1", null, "Our Mission:"), 
-                    React.createElement("h3", null, "Satisfy Our Customers and Continuously Improve"), 
-                    React.createElement("div", {className: "call"}, 
-                        React.createElement("a", {href: "tel:206-949-7471", title: "Contact Us"}, React.createElement("h2", null, React.createElement("span", {className: "glyphicon glyphicon-earphone"})), React.createElement("h1", null, " Call Us"))
-                    )
-        )
-		)
-	), 
+
 
 
     React.createElement("div", {className: "cd-fixed-bg cd-bg-2"}, 
-		React.createElement("center", null, React.createElement("h1", null, "Explore Speedway")), 
+		React.createElement("center", null, 
+            React.createElement("h1", null, "Explore Speedway")
+            ), 
         React.createElement(Services, null)
 	), 
-    React.createElement("div", {className: "cd-scrolling-bg cd-color-2"}, 
-		React.createElement("div", {className: "cd-container"}, 
-            React.createElement("center", null, React.createElement("h1", null, "scrolling")), 
-                React.createElement("img", {src: "https://unsplash.global.ssl.fastly.net/assets/core/logo-black-b37a09de4a228cd8fb72adbabc95931c5090611a0cae8e76f1fd077d378ec080.svg"}), 
-                    React.createElement("img", {src: "https://unsplash.global.ssl.fastly.net/assets/core/logo-black-b37a09de4a228cd8fb72adbabc95931c5090611a0cae8e76f1fd077d378ec080.svg"}), 
-                        React.createElement("img", {src: "https://unsplash.global.ssl.fastly.net/assets/core/logo-black-b37a09de4a228cd8fb72adbabc95931c5090611a0cae8e76f1fd077d378ec080.svg"}), 
-            React.createElement("img", {src: "https://unsplash.global.ssl.fastly.net/assets/core/logo-black-b37a09de4a228cd8fb72adbabc95931c5090611a0cae8e76f1fd077d378ec080.svg"})
-		)
-	), 
-    React.createElement("div", {className: "cd-fixed-bg cd-bg-4"}, 
-        React.createElement("h1", null, "here")
+
+    React.createElement("div", {className: "cd-fixed-bg cd-bg-4"}
+
         ), 
 
 
@@ -415,37 +399,47 @@ var Services = React.createClass({displayName: "Services",
                 ), 
                 React.createElement("div", {className: "col-xs-12 col-sm-6 col-lg-4 product-button sr-o"}, 
                React.createElement("a", {href: "#"}, 
+              React.createElement("div", {className: "product-expand"}, 
               React.createElement("h1", {className: "product-header"}, "Other"), 
               React.createElement("p", {className: "product-description"}, "sfgbgfb fsgg srdgsdgf sfgsgf sdfsdfg sfbs sgbsgbs  into money!"), 
               React.createElement("span", null, React.createElement("h1", null, "O"))
+              )
           )
            ), 
    React.createElement("div", {className: "col-xs-12 col-sm-6 col-lg-4 product-button sr-b"}, 
        React.createElement("a", {href: "#bulk"}, 
+           React.createElement("div", {className: "product-expand"}, 
            React.createElement("h1", {className: "product-header"}, "Plastic Dry Bulk Services"), 
            React.createElement("p", {className: "product-description"}, "Railcar Box Offs, Sea Container Offloading, etc."), 
            React.createElement("span", null, React.createElement("h1", null, "B"))
+           )
        )
    ), 
    React.createElement("div", {className: "col-xs-12 col-sm-6 col-lg-4 product-button sr-i"}, 
        React.createElement("a", {href: "#industrial"}, 
+           React.createElement("div", {className: "product-expand"}, 
            React.createElement("h1", {className: "product-header"}, "Light Industrial"), 
            React.createElement("p", {className: "product-description"}, "This is a description of the services provided"), 
            React.createElement("span", null, React.createElement("h1", null, "I"))
+           )
        )
    ), 
    React.createElement("div", {className: "col-xs-12 col-sm-6 col-lg-4 product-button sr-c"}, 
        React.createElement("a", {href: "#copackaging"}, 
+           React.createElement("div", {className: "product-expand"}, 
            React.createElement("h1", {className: "product-header"}, "Co Packaging"), 
            React.createElement("p", {className: "product-description"}, "This is a description of the services provided"), 
            React.createElement("span", null, React.createElement("h1", null, "C"))
+           )
        )
    ), 
    React.createElement("div", {className: "col-xs-12 col-sm-6 col-lg-4 product-button sr-3"}, 
        React.createElement("a", {href: "#pl"}, 
+           React.createElement("div", {className: "product-expand"}, 
            React.createElement("h1", {className: "product-header"}, "3PL"), 
            React.createElement("p", {className: "product-description"}, "This is a description of the services provided under this header"), 
            React.createElement("span", null, React.createElement("h1", null, "3"))
+           )
        )
    )
 )
@@ -472,32 +466,38 @@ var TapeComponent = React.createClass({displayName: "TapeComponent",
                 React.createElement(Header, null), 
                 React.createElement("div", {className: "container-fluid default"}, 
                         React.createElement("div", {className: "row paragraph"}, 
-                           React.createElement("div", {className: "col-xs-12"}, 
-                               React.createElement("h2", null, "Tape"), 
-                               React.createElement("div", {className: "col-md-6"}, 
-                                 React.createElement("ul", null, 
-                                     React.createElement("li", null, React.createElement("h1", {className: "li_description"}, "Width: 1.6 M")), 
-                                     React.createElement("li", null, React.createElement("h1", {className: "li_description"}, "Speed: 200m per Minute")), 
-                                     React.createElement("li", null, React.createElement("h1", {className: "li_description"}, "Max Unwind OD: 800mm")), 
-                                     React.createElement("li", null, React.createElement("h1", {className: "li_description"}, "Max Rewind OD: ")), 
-                                        React.createElement("ul", null, 
-                                             React.createElement("li", null, React.createElement("h1", {className: "li_description"}, "4 shafts exchange 150mm")), 
-                                             React.createElement("li", null, React.createElement("h1", {className: "li_description"}, "2 Shafts exchange 280mm"))
+                            React.createElement("div", {className: "cd-fixed-bg cd-bg-1 header-img"}, 
+                                React.createElement("h2", null, "Tape"), 
+                                React.createElement("div", {className: "img-overlay-1"})
+                            ), 
+                            React.createElement("div", {className: "cd-scrolling-sm cd-color-2"}, 
+                        		React.createElement("div", {className: "cd-container"}, 
+                                    React.createElement("div", {className: "col-xs-12 col-sm-12 col-md-6 col-lg-6 picbox1"}, 
+                                      React.createElement("ul", null, 
+                                          React.createElement("li", null, React.createElement("h1", {className: "li_description"}, "Width: 1.6 M")), 
+                                          React.createElement("li", null, React.createElement("h1", {className: "li_description"}, "Speed: 200m per Minute")), 
+                                          React.createElement("li", null, React.createElement("h1", {className: "li_description"}, "Max Unwind OD: 800mm")), 
+                                          React.createElement("li", null, React.createElement("h1", {className: "li_description"}, "Max Rewind OD: ")), 
+                                             React.createElement("ul", null, 
+                                                  React.createElement("li", null, React.createElement("h1", {className: "li_description"}, "4 shafts exchange 150mm")), 
+                                                  React.createElement("li", null, React.createElement("h1", {className: "li_description"}, "2 Shafts exchange 280mm"))
+                                             )
+                                      )
+                                    ), 
+                                    React.createElement("div", {className: "col-xs-12 col-sm-12 col-md-6 col-lg-6 picbox1"}, 
+                                        React.createElement("video", {controls: true}, 
+                                          React.createElement("source", {src: "images/HY-BD.mp4", type: "video/mp4"}), 
+                                          "Your browser does not support HTML5 video."
                                         )
-                                 )
-                               ), 
-                               React.createElement("div", {className: "col-md-6"}, 
-                                   React.createElement("p", null, "kjnsdfbjkndfkjn")
-                               )
-                           )
+                                    )
+                        		)
+                        	)
+
+
+
                          ), 
                         React.createElement("div", {className: "row image-boxes"}, 
-                          React.createElement("div", {className: "col-xs-12 col-sm-12 col-md-6 col-lg-6 picbox1"}, 
-                              React.createElement("video", {controls: true}, 
-                                React.createElement("source", {src: "images/HY-BD.mp4", type: "video/mp4"}), 
-                                "Your browser does not support HTML5 video."
-                              )
-                          ), 
+
                           React.createElement("div", {className: "col-xs-12 col-sm-12 col-md-6 col-lg-6 picbox2"}, 
                             React.createElement("img", {src: "../app/images/Tape.png", alt: ""})
                           )

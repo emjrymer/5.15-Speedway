@@ -5829,23 +5829,28 @@ body {
   vertical-align: middle;
   letter-spacing: 2px;
   padding-right: 2%;
-  padding-top: 2.3%; }
+  padding-top: 3%; }
 
 .list-inline > li {
   display: inline-block;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 11px;
+  padding-right: 11px;
   font-size: 20px; }
 
 .list-inline > li > a {
+  font-family: 'Muli', sans-serif;
+  font-weight: bold;
+  transition: 0.3s ease;
   padding: 5px;
   color: #13562F; }
 
 .list-inline > li > a:hover {
+  border-top: 4px solid #0B095E;
+  border-bottom: 4px solid #13562F;
   background-color: #fff;
   border-radius: 8px;
   text-decoration: none;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.35); }
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35); }
 
 h1 {
   margin-top: 0;
@@ -5861,6 +5866,19 @@ h1 {
 .cd-fixed-bg.cd-bg-1 {
   background-image: url("../images/forkliftandpeople.png"); }
 
+.img-overlay-1 {
+  content: "";
+  position: absolute;
+  height: 455px;
+  top: 115px;
+  left: 14.5px;
+  bottom: 0px;
+  right: 14.5px;
+  background-color: green;
+  opacity: 0.5;
+  z-index: 10;
+  transition: all 0.5s ease-out; }
+
 .cd-fixed-bg.cd-bg-2 {
   background-color: #fff;
   padding: 10px; }
@@ -5873,13 +5891,17 @@ h1 {
   min-height: 70%; }
 
 .cd-scrolling-bg {
+  margin: 0;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
   min-height: 100%;
+  opacity: 0.5;
   background-image: url("http://static1.squarespace.com/static/54a74bc3e4b0e845493a0a9a/54a78797e4b00bf98ff0d388/5520d607e4b0562b8523eef7/?format=1000w"); }
 
 .cd-scrolling-sm {
-  min-height: 80%;
+  margin: 0;
+  min-height: 70%;
   background-image: url("http://static1.squarespace.com/static/54a74bc3e4b0e845493a0a9a/54a78797e4b00bf98ff0d388/5520d607e4b0562b8523eef7/?format=1000w");
-  padding: 20px;
+  opacity: 0.9;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
@@ -5890,7 +5912,7 @@ h1 {
 
 #head {
   width: 100%;
-  height: 90px;
+  height: 115px;
   float: left;
   position: fixed;
   top: 0;
@@ -5921,7 +5943,7 @@ h1 {
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
     .logoHolder a img {
-      max-width: none;
+      max-width: 100%;
       padding-top: 15px; }
 
 .product-button {
@@ -5929,8 +5951,10 @@ h1 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  border-right: 2px solid #333;
-  border-left: 2px solid #333; }
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-top: 10px solid transparent; }
 
 .product-button:first-child {
   border-left: none; }
@@ -5938,22 +5962,90 @@ h1 {
 .product-button:last-child {
   border-right: none; }
 
+.product-expand {
+  line-height: 10px;
+  transition: line-height 1s;
+  transition: margin-top 1s;
+  margin-top: 20px; }
+  .product-expand span > h1 {
+    padding-top: 0; }
+
+.product-expand:hover {
+  line-height: 20px;
+  margin-top: 0; }
+
 .sr-t {
   background-image: url("../images/Tape-high-vibrance.png");
-  transition: background-image 1s; }
+  transition: background-image 1s;
+  height: 250px;
+  text-align: center;
+  padding-top: 2em; }
+
+center > h1 {
+  font-family: 'Muli', sans-serif;
+  font-size: 40px;
+  letter-spacing: 7px;
+  font-weight: bolder; }
 
 .sr-t:hover {
-  background-image: url("../images/Tape-blur.png"); }
+  background-image: url("../images/Tape-blur-darken-50.png");
+  text-shadow: 10px 10px 40px #fff;
+  color: #fff; }
 
 .sr-o {
-  background-image: url("../images/virgin_pp_polypropylene.jpg"); }
+  background-image: url("../images/virgin_pp_polypropylene-sharpen-1.jpg");
+  transition: background-image 1s;
+  height: 250px;
+  text-align: center;
+  padding-top: 2em; }
 
 .sr-o:hover {
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(2px); }
+  background-image: url("../images/virgin_pp_polypropylene-blur-4.jpg");
+  opacity: 0.7; }
+
+.sr-b {
+  background-image: url("../images/Picture1.png");
+  transition: background-image 1s;
+  height: 250px;
+  text-align: center;
+  padding-top: 2em; }
+
+.sr-b:hover {
+  background-image: url("../images/Picture1.png");
+  opacity: 0.7; }
+
+.sr-i {
+  background-image: url("../images/Picture4.png");
+  transition: background-image 1s;
+  height: 250px;
+  text-align: center;
+  padding-top: 2em; }
+
+.sr-i:hover {
+  background-image: url("../images/Picture4.png");
+  opacity: 0.7; }
+
+.sr-c {
+  background-image: url("../images/warehouse.png");
+  transition: background-image 1s;
+  height: 250px;
+  text-align: center;
+  padding-top: 2em; }
+
+.sr-c:hover {
+  background-image: url("../images/warehouse.png");
+  opacity: 0.7; }
+
+.sr-3 {
+  background-image: url("../images/warehouse2.png");
+  transition: background-image 1s;
+  height: 250px;
+  text-align: center;
+  padding-top: 2em; }
+
+.sr-3:hover {
+  background-image: url("../images/warehouse2.png");
+  opacity: 0.7; }
 
 a.product-button {
   border: 2px solid white;
@@ -5966,7 +6058,7 @@ a.product-button {
   color: #fff; }
 
 .product-header {
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 150%; }
 
 .product-description {
@@ -6018,6 +6110,22 @@ a.product-button {
   border-radius: 55px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.35); }
 
+.years {
+  font-size: 90px; }
+
+.celebrating {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  text-shadow: 3px 3px black;
+  color: #fff;
+  padding-top: 220px;
+  font-size: 80px;
+  font-weight: bold;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 250px; }
+
 button {
   border: none;
   background-color: #eee; }
@@ -6036,10 +6144,12 @@ button {
   height: 570px;
   color: black;
   text-transform: uppercase;
-  padding-top: 90px; }
+  padding-top: 115px; }
   .container-fluid a {
     text-decoration: none;
-    color: #9D4A45; }
+    color: black;
+    font-family: 'Muli', sans-serif;
+    letter-spacing: 2px; }
 
 .form-control {
   border: 1px solid #696262; }
